@@ -1,0 +1,25 @@
+From 2b0edc459c2762458ecb3c1b395893ef997813fa Mon Sep 17 00:00:00 2001
+From: andip71 <andreasp@gmx.de>
+Date: Mon, 2 Mar 2015 18:24:02 +0100
+Subject: [PATCH] 4
+
+---
+ init.target.rc | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/init.target.rc b/init.target.rc
+index 2034472..bfd3193 100755
+--- a/init.target.rc
++++ b/init.target.rc
+@@ -149,6 +149,8 @@ service qrngp /system/bin/qrngp
+ 
+ on property:sys.boot_completed=1
+     start qrngp
++	chmod 0664 /sys/fs/selinux/enforce
++	write /sys/fs/selinux/enforce 0 
+ 
+ service qseecomd /system/bin/qseecomd
+    class core
+-- 
+1.9.1
+

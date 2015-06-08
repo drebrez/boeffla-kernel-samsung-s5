@@ -1,0 +1,42 @@
+From 7f98e561bc3fa8a7d063bfb2d945b2875e3c0e09 Mon Sep 17 00:00:00 2001
+From: andip71 <andreasp@gmx.de>
+Date: Tue, 17 Mar 2015 08:29:57 +0100
+Subject: [PATCH] 2
+
+---
+ init.carrier.rc | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/init.carrier.rc b/init.carrier.rc
+index 990d203..730b468 100755
+--- a/init.carrier.rc
++++ b/init.carrier.rc
+@@ -165,12 +165,12 @@ on property:sys.qseecomd.enable=true
+ 
+ 
+ # SSWAP
+-service swapon /sbin/sswap -s
+-    class core
+-    user root
+-    group root
+-    seclabel u:r:sswap:s0
+-    oneshot
++#service swapon /sbin/sswap -s
++#    class core
++#    user root
++#    group root
++#    seclabel u:r:sswap:s0
++#    oneshot
+ 
+ # IPSec for VOLTE
+ service ipsec-daemon /system/bin/IPSecService
+@@ -212,4 +212,4 @@ service edmaudit /system/bin/edmaudit
+     class main
+     user root
+ 
+-## WTL_EDM_END
+\ No newline at end of file
++## WTL_EDM_END
+-- 
+1.9.1
+
