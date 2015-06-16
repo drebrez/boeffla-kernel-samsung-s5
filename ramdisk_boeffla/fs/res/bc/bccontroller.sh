@@ -90,7 +90,7 @@ if [ "lov_presets" == "$1" ]; then
 	echo "Power~"
 	echo "Gov: ondemand / standard"
 	echo "^Sched: row"
-	echo "^CPU: 2688 / no uv"
+	echo "^CPU: 2611 / no uv"
 	echo "^GPU: 200-657;"
 	
 	echo "Standard~"
@@ -131,7 +131,7 @@ if [ "conf_presets" == "$1" ]; then
 		# gov, gov prof, sched int, sched ext, cpu max, cpu uv, gpu freq, gpu uv
 		echo "ondemand;ondemand - standard;"
 		echo "row;row;"
-		echo "2688000;None;"
+		echo "2611200;None;"
 		echo "5,0;None"
 	fi
 	if [ "Standard" ==  "$2" ]; then
