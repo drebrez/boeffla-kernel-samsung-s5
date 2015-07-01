@@ -411,7 +411,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		90,		// scaling_fastdown_down_threshold (range from 11 to under scaling_fastdown_up_threshold)
 		0,		// scaling_responsiveness_freq (0=disable, range in system table from freq->min to freq->max in khz)
 		30,		// scaling_responsiveness_up_threshold (0=disable, range from 11 to 100)
-		0,		// scaling_proportional (0=disable, any value above 0)
+		2,		// scaling_proportional (0=disable, any value above 0)
 #ifdef ENABLE_INPUTBOOSTER
 		0,		// inputboost_cycles (0=disable, range from 0 to 1000)
 		80,		// inputboost_up_threshold (0=disable, range from 0 to 100)
@@ -566,7 +566,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		90,		// scaling_fastdown_down_threshold
 		652800,		// scaling_responsiveness_freq
 		20,		// scaling_responsiveness_up_threshold
-		1,		// scaling_proportional
+		2,		// scaling_proportional
 #ifdef ENABLE_INPUTBOOSTER
 		0,		// inputboost_cycles
 		80,		// inputboost_up_threshold
@@ -721,7 +721,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		90,		// scaling_fastdown_down_threshold
 		652800,		// scaling_responsiveness_freq
 		20,		// scaling_responsiveness_up_threshold
-		1,		// scaling_proportional
+		2,		// scaling_proportional
 #ifdef ENABLE_INPUTBOOSTER
 		0,		// inputboost_cycles
 		80,		// inputboost_up_threshold
@@ -876,7 +876,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		90,		// scaling_fastdown_down_threshold
 		652800,		// scaling_responsiveness_freq
 		20,		// scaling_responsiveness_up_threshold
-		1,		// scaling_proportional
+		2,		// scaling_proportional
 #ifdef ENABLE_INPUTBOOSTER
 		0,		// inputboost_cycles
 		80,		// inputboost_up_threshold
@@ -1031,7 +1031,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		90,		// scaling_fastdown_down_threshold
 		652800,		// scaling_responsiveness_freq
 		20,		// scaling_responsiveness_up_threshold
-		1,		// scaling_proportional
+		2,		// scaling_proportional
 #ifdef ENABLE_INPUTBOOSTER
 		0,		// inputboost_cycles
 		80,		// inputboost_up_threshold
@@ -1186,7 +1186,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		90,		// scaling_fastdown_down_threshold
 		422400,		// scaling_responsiveness_freq
 		0,		// scaling_responsiveness_up_threshold
-		0,		// scaling_proportional
+		2,		// scaling_proportional
 #ifdef ENABLE_INPUTBOOSTER
 		0,		// inputboost_cycles
 		80,		// inputboost_up_threshold
@@ -1341,7 +1341,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		90,		// scaling_fastdown_down_threshold
 		652800,		// scaling_responsiveness_freq
 		20,		// scaling_responsiveness_up_threshold
-		1,		// scaling_proportional
+		2,		// scaling_proportional
 #ifdef ENABLE_INPUTBOOSTER
 		0,		// inputboost_cycles
 		80,		// inputboost_up_threshold
@@ -1496,7 +1496,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		90,		// scaling_fastdown_down_threshold
 		0,		// scaling_responsiveness_freq
 		0,		// scaling_responsiveness_up_threshold
-		0,		// scaling_proportional
+		2,		// scaling_proportional
 #ifdef ENABLE_INPUTBOOSTER
 		0,		// inputboost_cycles
 		80,		// inputboost_up_threshold
@@ -1651,7 +1651,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		90,		// scaling_fastdown_down_threshold
 		0,		// scaling_responsiveness_freq
 		0,		// scaling_responsiveness_up_threshold
-		0,		// scaling_proportional
+		2,		// scaling_proportional
 #ifdef ENABLE_INPUTBOOSTER
 		0,		// inputboost_cycles
 		80,		// inputboost_up_threshold
@@ -1808,7 +1808,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		90,		// scaling_fastdown_down_threshold
 		0,		// scaling_responsiveness_freq
 		0,		// scaling_responsiveness_up_threshold
-		1,		// scaling_proportional
+		2,		// scaling_proportional
 #ifdef ENABLE_INPUTBOOSTER
 		0,		// inputboost_cycles
 		80,		// inputboost_up_threshold
@@ -1963,7 +1963,7 @@ struct zzmoove_profile zzmoove_profiles[] = {
 		90,		// scaling_fastdown_down_threshold
 		652800,		// scaling_responsiveness_freq
 		20,		// scaling_responsiveness_up_threshold
-		1,		// scaling_proportional
+		2,		// scaling_proportional
 #ifdef ENABLE_INPUTBOOSTER
 		0,		// inputboost_cycles
 		80,		// inputboost_up_threshold
