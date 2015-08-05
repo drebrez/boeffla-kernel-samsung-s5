@@ -164,8 +164,8 @@
 		echo 1 > /sys/kernel/dyn_fsync/Dyn_fsync_active
 		/sbin/busybox sync
 
-		# If not, apply default Boeffla-Kernel vnswap of 1000 MB
-		/res/bc/bccontroller.sh apply_zram 1 1 1048576000
+		# If not, apply default Boeffla-Kernel vnswap of 1300 MB
+		/res/bc/bccontroller.sh apply_zram 1 1 1363148800
 
 		echo $(date) "No startup configuration found, enable all default settings"  >> $BOEFFLA_LOGFILE
 	fi

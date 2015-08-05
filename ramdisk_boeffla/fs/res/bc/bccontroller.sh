@@ -1127,7 +1127,7 @@ if [ "apply_system_tweaks" == "$1" ]; then
 		echo "90" > /proc/sys/vm/dirty_ratio
 		echo "500" > /proc/sys/vm/dirty_writeback_centisecs
 		echo "4096" > /proc/sys/vm/min_free_kbytes
-		echo "200" > /proc/sys/vm/swappiness
+		echo "130" > /proc/sys/vm/swappiness
 		echo "10" > /proc/sys/vm/vfs_cache_pressure
 		echo "3" > /proc/sys/vm/drop_caches
 		busybox sleep 0.5s
@@ -1263,7 +1263,7 @@ if [ "apply_zram" == "$1" ]; then
 			busybox sleep 0.1s
 			busybox sync
 		fi
-		echo "200" > /proc/sys/vm/swappiness
+		echo "130" > /proc/sys/vm/swappiness
 	fi
 
 	exit 0
