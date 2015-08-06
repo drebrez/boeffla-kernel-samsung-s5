@@ -99,6 +99,9 @@
 	mount -o remount,commit=20,noatime $DATA_DEVICE /data
 	/sbin/busybox sync
 
+	# Initialize swappiness to 130 for vnswap
+	echo "130" > /proc/sys/vm/swappiness
+
 	echo $(date) Boeffla-Kernel default settings 1 applied >> $BOEFFLA_LOGFILE
 
 # Execute early startconfig placed by Boeffla-Config V2 app, if there is one
