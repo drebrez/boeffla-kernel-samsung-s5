@@ -28,7 +28,7 @@ index 580ff51..c4f2a02 100755
      sysclktz 0
  
      loglevel 3
-@@ -483,9 +488,9 @@ on boot
+@@ -499,9 +504,9 @@ on boot
      write /proc/sys/vm/overcommit_memory 1
      write /proc/sys/vm/min_free_order_shift 4
      chown root system /sys/module/lowmemorykiller/parameters/adj
@@ -38,9 +38,9 @@ index 580ff51..c4f2a02 100755
 -    chmod 0220 /sys/module/lowmemorykiller/parameters/minfree
 +    chmod 0660 /sys/module/lowmemorykiller/parameters/minfree
  
-     # Tweak background writeout
-     write /proc/sys/vm/dirty_expire_centisecs 200
-@@ -1351,3 +1356,11 @@ service bootchecker /system/bin/bootchecker
+     # for BT MAC address
+     mkdir /efs/bluetooth 0775 radio system
+@@ -1413,3 +1418,11 @@ service bootchecker /system/bin/bootchecker
      user system
      group system log
      oneshot

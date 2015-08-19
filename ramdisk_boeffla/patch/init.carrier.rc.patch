@@ -11,7 +11,7 @@ diff --git a/init.carrier.rc b/init.carrier.rc
 index 990d203..730b468 100755
 --- a/init.carrier.rc
 +++ b/init.carrier.rc
-@@ -165,12 +165,12 @@ on property:sys.qseecomd.enable=true
+@@ -168,12 +168,12 @@ on property:sys.qseecomd.enable=true
  
  
  # SSWAP
@@ -30,7 +30,7 @@ index 990d203..730b468 100755
  
  # IPSec for VOLTE
  service ipsec-daemon /system/bin/IPSecService
-@@ -212,4 +212,4 @@ service edmaudit /system/bin/edmaudit
+@@ -215,4 +215,4 @@ service edmaudit /system/bin/edmaudit
      class main
      user root
  
