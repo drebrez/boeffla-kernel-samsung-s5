@@ -73,16 +73,6 @@
 	/sbin/busybox sync
 	mount -o remount,ro -t ext4 $SYSTEM_DEVICE /system
 		
-# Correct /sbin and /res directory and file permissions
-	mount -o remount,rw rootfs /
-
-	# change permissions of /sbin folder and scripts in /res/bc
-	/sbin/busybox chmod -R 755 /sbin
-	/sbin/busybox chmod 755 /res/bc/*
-
-	/sbin/busybox sync
-	mount -o remount,ro rootfs /
-
 # remove any obsolete Boeffla-Config V2 startconfig done file
 	/sbin/busybox rm -f $BOEFFLA_STARTCONFIG_DONE
 
