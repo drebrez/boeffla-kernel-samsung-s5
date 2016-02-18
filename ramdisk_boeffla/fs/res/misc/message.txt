@@ -1,8 +1,5 @@
 Please note:
 <br>
 <br>
-The GPU frequency table has changed after removing the GPU overclocking step of 657 MHz 
-(this step was never working and cannot work in future even, hence removed).
-<br>
-<br>
-Please check your settings for min and max freuqncies in the GPU tab and adjust if required.
+Interactive CPU governor is by far the most stable governor on this device, so you might 
+want to consider using it when your main goal is highest stability.
